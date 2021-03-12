@@ -1,0 +1,65 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/*основной цвет текста #757575*/
+/*цвет заглавий #212121*/
+/*белый #FFFFFF*/
+/*акцент #2196F3;*/
+/*background #E5E5E5*/
+/*background2 #f5f4fa*/
+/*background-hero: #2F303A;*/
+
+/*Logo*/
+.logo {
+  color: #212121;
+}
+
+.logo:hover {
+  color: var(--accent-color);
+}
+
+/*Site-nav*/
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link .current {
+  color: #2196f3;
+}
+
+/*Hero*/
+.hero-title {
+  color: #ffffff;
+}
+
+.hero {
+  background-color: #2f303a;
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+/*Sections*/
+.section-title {
+  color: var(--title-text-color);
+}
