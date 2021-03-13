@@ -14,17 +14,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.list {
+.nodots {
   list-style: none;
 }
 
-/*основной цвет текста #757575*/
-/*цвет заглавий #212121*/
-/*белый #FFFFFF*/
-/*акцент #2196F3;*/
-/*background #E5E5E5*/
-/*background2 #f5f4fa*/
-/*background-hero: #2F303A;*/
 
 /*Logo*/
 .logo {
@@ -44,8 +37,9 @@ body {
   color: var(--accent-color);
 }
 
+
 /*Site-nav*/
-.site-nav .link {
+.site-nav {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -54,14 +48,15 @@ body {
   text-decoration: none;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav:hover,
+.site-nav:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link .current {
-  color: #2196f3;
+.current {
+  color: var(--accent-color);
 }
+
 
 /*Main*/
 main {
@@ -70,7 +65,7 @@ main {
 
 /*Hero*/
 .hero-title {
-  color: #ffffff;
+  color: var(--primary-white-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -115,7 +110,6 @@ main {
 }
 
 .about-list .text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -129,6 +123,7 @@ main {
 }
 
 .workers .title {
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -136,17 +131,87 @@ main {
 }
 
 .workers .text {
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
+/*Portfolio*/
+.works-button {
+  color: var(--title-text-color);
+  background-color: var(--background-second-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.works-button:hover,
+.works-button:focus {
+  color: var(--accent-color);
+}
+
+.works-button:active {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.work-examples-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.work-examples-text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
 /*Footer*/
+.bottom {
+  background-color: var(--background-dark-color);
+}
+
+.bottom .logo {
+  color: var(--primary-white-color);
+}
+
 .address {
+  color: var(--primary-white-color);
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
+
+.bottom-nav:hover,
+.bottom-nav:focus {
+  color: var(--accent-color);
+}
+
+.bottom-nav {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
